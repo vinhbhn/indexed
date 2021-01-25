@@ -10,11 +10,7 @@ ZKSNARK
 
 ## Tx Cost
 
-<<<<<<< HEAD
 $0.001 (off-chain), 1,9k gas (on-chain) (https://zksync.io/faq/tokens.html#fee-costs)
-=======
-$0.001 (off-chain), 1.9k gas (on-chain) (https://zksync.io/faq/tokens.html#fee-costs)
->>>>>>> upstream/main
 
 ## Finality
 
@@ -61,12 +57,5 @@ Currently, 300+ TPS due to the current limitations of the PLONK CRS (zkSync node
 ## Source
 
 https://zksync.io/faq/intro.html
-<<<<<<< HEAD
-
-https://medium.com/matter-labs/curve-zksync-l2-ethereums-first-user-defined-zk-rollup-smart-contract-5a72c496b350 [2]
-
-## Reddit Submission Link
-=======
->>>>>>> upstream/main
 
 https://medium.com/matter-labs/curve-zksync-l2-ethereums-first-user-defined-zk-rollup-smart-contract-5a72c496b350 [2]
