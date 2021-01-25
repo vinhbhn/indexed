@@ -2,21 +2,19 @@ const tableData = [
   {
     id: 2,
     chain_name: 'Arbitrum',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'POS/plasma',
+    tx_cost: '30 gwei',
+    consensus: 'consortium',
+    max_tps: '<= 4.5k/sec',
     url: 'arbitrum-doc'
   },
   {
     id: 3,
     chain_name: 'Aztec',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'ZkRollup',
+    tx_cost: '$0.000001',
+    consensus: 'Roll-up proofs',
+    max_tps: '300',
     url: 'aztec-doc'
   },
   {
@@ -24,7 +22,6 @@ const tableData = [
     chain_name: 'Celer',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'celer-doc'
@@ -34,7 +31,6 @@ const tableData = [
     chain_name: 'Connext',
     type: 'Micropayment',
     tx_cost: '0',
-    finality: 'instant',
     consensus: 'state channel',
     max_tps: '1000+',
     url: 'connext-doc'
@@ -44,7 +40,6 @@ const tableData = [
     chain_name: 'Dapp Solutions',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'dapp-solutions-doc'
@@ -54,7 +49,6 @@ const tableData = [
     chain_name: 'Dragonchain',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'dragonchain-doc'
@@ -64,7 +58,6 @@ const tableData = [
     chain_name: 'Everest',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'everest-doc'
@@ -72,11 +65,10 @@ const tableData = [
   {
     id: 9,
     chain_name: 'Fuel Labs',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'Rollup',
+    tx_cost: '$0.03',
+    consensus: 'PoW',
+    max_tps: '320.3ms*',
     url: 'fuel-labs-doc'
   },
   {
@@ -84,7 +76,6 @@ const tableData = [
     chain_name: 'Hubble Project',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'hubble-project-doc'
@@ -94,7 +85,6 @@ const tableData = [
     chain_name: 'KChannels',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'kchannels-doc'
@@ -102,19 +92,17 @@ const tableData = [
   {
     id: 12,
     chain_name: 'Loopring',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'Chain-agnostic',
+    tx_cost: '$0.0002',
+    consensus: 'zkRollup',
+    max_tps: '16,400',
     url: 'loopring-doc'
   },
   {
     id: 13,
     chain_name: 'Matic Network',
     type: 'POS+Plasma',
-    tx_cost: '0.00001',
-    finality: '2 seconds',
+    tx_cost: '$0.00001',
     consensus: 'POS',
     max_tps: '7200',
     url: 'maticnetwork-doc'
@@ -122,11 +110,10 @@ const tableData = [
   {
     id: 14,
     chain_name: 'Matter Labs',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'ZKSNARK',
+    tx_cost: '$0.001',
+    consensus: 'Validity proofs',
+    max_tps: '2000',
     url: 'matter-labs-doc'
   },
   {
@@ -134,7 +121,6 @@ const tableData = [
     chain_name: 'Meter',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'meter-doc'
@@ -142,41 +128,37 @@ const tableData = [
   {
     id: 16,
     chain_name: 'Minter',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'DPoS',
+    tx_cost: '~1500 gwei',
+    consensus: 'DPoS',
+    max_tps: '~1000',
     url: 'minter-doc'
   },
   {
     id: 17,
     chain_name: 'Near',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'PoS',
+    tx_cost: '$0.0004',
+    consensus: 'POS',
+    max_tps: '100k +',
     url: 'near-doc'
   },
   {
     id: 18,
     chain_name: 'OMG',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'Plasma',
+    tx_cost: '$0.23',
+    consensus: 'PoA > PoS',
+    max_tps: '4000',
     url: 'omg-doc'
   },
   {
     id: 19,
     chain_name: 'Raiden',
-    type: '---',
+    type: 'State Channel',
     tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    consensus: 'PoS',
+    max_tps: '100k',
     url: 'raiden-doc'
   },
   {
@@ -184,7 +166,6 @@ const tableData = [
     chain_name: 'Serv',
     type: '---',
     tx_cost: '---',
-    finality: '---',
     consensus: '---',
     max_tps: '---',
     url: 'services'
@@ -192,49 +173,53 @@ const tableData = [
   {
     id: 21,
     chain_name: 'Skale',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'BLS Rollup',
+    tx_cost: 'Gasless*',
+    consensus: 'PoS',
+    max_tps: '2000',
     url: 'skale-doc'
   },
   {
     id: 22,
     chain_name: 'Solana',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    type: 'POS + POH',
+    tx_cost: '$0.00001',
+    consensus: 'PBFT PoS & PoH',
+    max_tps: '50,000',
     url: 'solana-doc'
   },
   {
     id: 23,
-    chain_name: 'Starkware',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
+    chain_name: 'Starkware (Zkrollup)',
+    type: 'CVM',
+    tx_cost: '315 gas/tx',
+    consensus: 'ZK proofs',
+    max_tps: '3000',
     url: 'starkware-doc'
   },
   {
     id: 24,
-    chain_name: 'Syscoin',
-    type: '---',
-    tx_cost: '---',
-    finality: '---',
-    consensus: '---',
-    max_tps: '---',
-    url: 'syscoin-doc'
+    chain_name: 'Starkware (Validium)',
+    type: 'CVM',
+    tx_cost: '17 gas/tx',
+    consensus: 'Validium proofs',
+    max_tps: '3000',
+    url: 'starkware-doc'
   },
   {
     id: 25,
+    chain_name: 'Syscoin',
+    type: 'Standalone',
+    tx_cost: '$0.00000464',
+    consensus: 'Hybrid PoW/PoS',
+    max_tps: '~61000',
+    url: 'syscoin-doc'
+  },
+  {
+    id: 26,
     chain_name: 'xDai',
     type: 'POS',
     tx_cost: '1 gwei',
-    finality: '2f+1≤n',
     consensus: 'POS',
     max_tps: '~70',
     url: 'xdai-doc'

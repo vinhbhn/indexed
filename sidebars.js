@@ -1,8 +1,7 @@
 module.exports = {
   someSidebar: {
-    "indexed.eth": [
-      'contribute-doc',
-      'index-doc'
+    "indexed.wtf": [
+      'contribute-doc'
     ],
     "Chains": [
       'arbitrum-doc',
@@ -25,7 +24,8 @@ module.exports = {
       'raiden-doc',
       'skale-doc',
       'solana-doc',
-      'starkware-doc',
+      'starkware-validium-doc',
+      'starkware-zkrollup-doc',
       'syscoin-doc',
       'xdai-doc'
     ],
